@@ -6,9 +6,15 @@
   "author": "PRO107",
   "license": "MIT",
   "scripts": {
+<<<<<<< HEAD
     "watch": "babel -w src/ -d dist/",
     "build": "babel src/ -d dist/",
     "serve": "babel -w src/ -d dist/ | nodemon --watch dist"
+=======
+    "babel": "npm run clean && babel --presets es2015 index.js -o build/index.js",
+    "start": "nodemon index.js",
+    "dev": "npm run start"
+>>>>>>> 80a7fa791e133c7eafd6397e799d7c56b76934aa
   },
   "devDependencies": {
     "babel": "^6.23.0",
