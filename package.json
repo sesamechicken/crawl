@@ -6,10 +6,9 @@
   "author": "PRO107",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf build/*",
     "babel": "npm run clean && babel --presets es2015 index.js -o build/index.js",
-    "start": "nodemon build/index.js",
-    "dev": "npm run clean && npm run babel && npm run start"
+    "start": "nodemon index.js",
+    "dev": "npm run start"
   },
   "dependencies": {
     "babel": "^6.23.0",
